@@ -152,7 +152,7 @@ Processing tokens is **expensive work** for the provider (GPU compute). If they 
 
 ## The key rule
 
-🔑 **Cache only works if the text is byte-identical.**
+**Cache only works if the text is byte-identical.**
 
 Change one character → provider thinks it's new → full price again.
 
@@ -162,10 +162,10 @@ That's why Hermes **freezes** the prompt. Any mid-chat change would break the ca
 
 ## Summary
 
-- ✅ You still send the full prompt every turn
-- ✅ Provider recognizes "I've seen this" → reuses processed version
-- ✅ You pay ~10% instead of 100%
-- ❌ If prompt changes → cache breaks → full price
+- You still send the full prompt every turn
+- Provider recognizes "I've seen this" → reuses processed version
+- You pay ~10% instead of 100%
+- If prompt changes → cache breaks → full price
 
 **The saving isn't on your side. It's on the provider's side, passed to you as a discount.**
 
@@ -193,9 +193,9 @@ Not re-read or re-built mid-chat → no wasted processing → cache stays valid
 
 ## That's it for Sticky Notes — just 3 tricks:
 
-✅ Cache it
-✅ Keep it small
-✅ Don't change it
+Cache it
+Keep it small
+Don't change it
 
 
 # Short Answers
