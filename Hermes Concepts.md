@@ -238,5 +238,3 @@
 ---
 
 **That's the complete Hermes architecture.** You now have the full picture — memory, skills, tools, learning, security, scheduling, and scaling patterns.
-
-These are all reusable patterns for your own projects. Want me to compile this into a single architecture cheat sheet you can keep?
