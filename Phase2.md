@@ -1,4 +1,4 @@
-# 2️⃣ Recipe Book (Skills) — Flow + Token Optimization
+# Flow + Token Optimization
 
 ```
 1. At startup → scan ~/.hermes/skills/ folder
