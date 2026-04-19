@@ -223,4 +223,14 @@ After (1 line):
 ### 3. Frozen During Session
 Files read **once** at chat start. Even if AI adds new facts mid-chat, the prompt **doesn't change**. New facts appear only in next chat.
 
-**Why?** Changing prompt = breaks cache = full price again.
+
+
+
+## 1. Fetch MEMORY.md        (facts)
+## 2. Fetch USER.md          (preferences)
+## 3. Fetch system prompt    (instructions)
+## 4. Fetch skills index     (names only, not full)
+## 5. Add user message
+## 6. Send → cached by provider (90% cheaper)
+## 7. If files full → AI merges old entries
+## 8. New facts saved to disk, applied next chat (frozen rule)
